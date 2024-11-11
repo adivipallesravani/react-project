@@ -1,0 +1,235 @@
+
+.app {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+
+.sidebar {
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  position: relative;
+  border-right: 1px solid #ddd;
+}
+
+.groups-list {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.group-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.group-item.selected {
+  background-color: transparent; 
+}
+
+.group-item:hover {
+  background-color: #e0e0e0;
+}
+
+.group-color {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.selected-group {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+
+
+.group-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.group-header h3 {
+  color: #fff;
+  margin: 0;
+}
+
+
+.middle-section {
+  flex-grow: 1;
+  margin: 0;
+  overflow-y: auto;
+  background-color: rgb(218, 229, 245, 100%);
+}
+
+
+.top-section {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 31, 139);
+  padding: 15px;
+  flex-shrink: 0;
+}
+
+.bottom-section {
+  padding: 15px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.note-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.note-item p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.note-item small {
+  display: block;
+  text-align: right;
+  color: #666;
+  font-size: 0.85em;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.input-container textarea {
+  flex-grow: 1;
+  border: none;
+  padding: 8px;
+  resize: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+.arrow-button {
+  background: transparent;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  margin-left: 8px;
+  cursor: pointer;
+  border: none;
+  color: rgb(0, 31, 139, 100%);
+  transform: rotate(50deg);
+}
+
+.arrow-button:disabled {
+  cursor: not-allowed;
+  color: #555;
+}
+
+
+.floating-create-group-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(120%);
+  background-color: rgb(0, 31, 139, 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.illustration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+  padding: 20px;
+  flex-grow: 1;
+  background-color: rgb(218, 229, 245, 100%);
+}
+
+.illustration h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.illustration p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.content {
+  flex-grow: 1;
+  background-color: #ecf0f1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.encryption-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  color: black;
+}
+
+.encryption-info svg {
+  margin-right: 8px;
+}
+
+.bottom-section {
+  background-color: rgb(0, 31, 139, 100%); 
+  
+  border-radius: 8px; 
+  flex-shrink: 0;
+  color: #fff; 
+}
